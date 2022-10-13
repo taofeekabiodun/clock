@@ -1,0 +1,118 @@
+.container{
+    margin: 50px auto;
+}
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid green;
+    position: relative;
+    overflow: hidden;
+}
+button{
+    background-color: unset;
+    border: unset;
+}
+.marking-twelve{
+    position: absolute;
+    top: 2%;
+    right: 40%;
+    left: 40%;
+}
+.marking-one{
+    position: absolute;
+    top: 8%;
+    left: 70%;
+}
+.marking-two{
+    position: absolute;
+    top: 28%;
+    left: 80%;
+}
+.marking-three{
+    position: absolute;
+    top: 46%;
+    left: 86%;
+}
+.marking-four{
+    position: absolute;
+    top: 66%;
+    left: 80%;
+}
+.marking-five{
+    position: absolute;
+    top: 80%;
+    left: 66%;
+}
+.marking-six{
+    position: absolute;
+    top: 88%;
+    left: 40%;
+    right: 40%;
+}
+.marking-seven{
+    position: absolute;
+    top: 82%;
+    right: 66%;
+}
+.marking-eight{
+    position: absolute;
+    top: 64%;
+    right: 80%;
+}
+.marking-nine{
+    position: absolute;
+    top: 46%;
+    right: 86%;
+}
+.marking-ten{
+    position: absolute;
+    top: 26%;
+    right: 80%;
+}
+.marking-eleven{
+    position: absolute;
+    top: 8%;
+    right: 68%;
+}
+.hands::before{
+    content: " ";
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 16px;
+     height: 16px;
+     border-radius: 18px;
+     margin-left: -9px;
+     margin-top: -6px;
+     background: #222;
+     z-index: 11;
+}
+.hand{
+    position: absolute;
+    width: 50%;
+    right: 50%;
+    height: 8px;
+    background-color: #61afff;
+    top: 50%;
+    border-radius: 6px;
+    transform-origin: 100%;
+    transform:rotate(90deg)
+}
+.hand.hour{
+    width: 30%;
+    height: 8px;
+    z-index: 3;
+}
+.hand.minute{
+    width: 40%;
+    height: 6px;
+    z-index: 10;
+}
+.hand.seconds{
+   background-color: #ee791a;
+   width: 45%;
+   height: 2px;
+   
+}
+
